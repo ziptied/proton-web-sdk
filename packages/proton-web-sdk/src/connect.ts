@@ -89,12 +89,7 @@ const login = async (loginOptions: LoginOptions): Promise<{
   }
 
   // Set scheme
-  let scheme = 'proton'
-  if (walletType === 'anchor') {
-    scheme = 'esr'
-  } else if (chain === 'proton-test') {
-    scheme = 'proton-dev'
-  }
+  let scheme = 'revealit'
 
   const options = {
     ...loginOptions.linkOptions,
